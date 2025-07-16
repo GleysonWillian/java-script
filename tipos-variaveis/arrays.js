@@ -1,6 +1,6 @@
-// Lista de frutas
+// Consiste em uma lista com diversos itens ou valores
 
 let frutas = ["Maça", "Banana", "Pera", "Melância"];
 
-// Para buscar uma frutas específica dentro de um array por meio do índice:
+// Acessar um item específico dentro do array
 frutas[2];

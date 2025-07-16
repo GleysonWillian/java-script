@@ -9,7 +9,7 @@ let msg2 = "Seja Bem-Vindo(a)";
 let concatenar = msg1 + msg2;
 
 let pessoa = "Gleyson";
-let msg3 = pessoa + " Olá, seja brm-vindo"
+let msg3 = pessoa + " Olá, seja bem-vindo"
 
 // método para visualizar o que contém dentro de uma variável
 console.log(msg3);

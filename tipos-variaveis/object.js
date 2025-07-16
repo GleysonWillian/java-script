@@ -1,3 +1,5 @@
+// Criando um objeto
+
 let xicara = {
     cor: "azul",
     tamanho: "pequeno",
@@ -5,5 +7,4 @@ let xicara = {
 };
 
 // Acessando uma propriedade de um objeto específico:
-
 xicara.material
