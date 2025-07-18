@@ -32,9 +32,9 @@ let listaCarros = [{
 listaCarros.map((carro, posicao) => {
     let cardCarro = document.getElementById("cards");
     cardCarro.innerHTML += `
-                <div class="col-md-4 mb-4">
+                <div class="col">
                 <div class="card h-100">
-                    <img src="${carro.img}" class="card-img-top" alt="...">
+                    <img src="${carro.img}" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">${carro.nome}</h5>
                         <a href="#" class="btn btn-secondary" onClick = "zoomImg('${posicao}')"><i class="bi bi-zoom-in"></i></a>
@@ -51,4 +51,15 @@ function zoomImg(posicao){
     document.getElementById("imgModal").src = carroSelecionado.img;
 
     new bootstrap.Modal('#zoomImg').show();
+}
+
+function alterarTemaSite(){
+    let tema = document.querySelector("html").getAttribute("data-bs-theme");
+    if(tema === "dark"){
+        document.querySelector("html").setAttribute("data-bs-theme", "light");
+        document.querySelector("#alterarTemaSite").innerHTML = `<i class="bi bi-moon-fill"></i>`;
+    }else{
+        document.querySelector("html").setAttribute("data-bs-theme", "dark");
+        document.querySelector("#alterarTemaSite").innerHTML = `<i class="bi bi-brightness-high-fill"></i>`;
+    }
 }
